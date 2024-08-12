@@ -9,7 +9,8 @@ function App() {
     )
       .then((response) => response.json()) //2
       .then((quote) => {
-        console.log(quote.quotes); //3
+        const quotes = quote.quotes;
+        console.log(quotes); //3
       });
   };
   GetQuote();
