@@ -4,16 +4,17 @@ import { useState } from "react";
 function App() {
   const [randomquote, setrandomquote] = useState("");
   const GetQuote = async () => {
-    fetch(
+    return fetch(
       "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json"
     )
       .then((response) => response.json()) //2
       .then((quote) => {
         const quotes = quote.quotes;
-        console.log(quotes); //3
+        return quotes;
       });
   };
   GetQuote();
+
   // console.log(GetQuote());
   const handlechange = async () => {};
   return (
