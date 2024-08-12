@@ -12,7 +12,8 @@ function App() {
         console.log(quote.quotes); //3
       });
   };
-  console.log(GetQuote());
+  GetQuote();
+  // console.log(GetQuote());
   const handlechange = async () => {};
   return (
     <>
