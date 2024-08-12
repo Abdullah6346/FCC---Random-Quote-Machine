@@ -35,9 +35,9 @@ function App() {
 
   return (
     <>
-      <div id="quote-box" className=" w-96 h-max bg-red-50">
-        <div id="text" className="w-28 text-black">
-          {randomquote?.quote}
+      <div id="quote-box" className=" max-w-md h-auto bg-red-50">
+        <div id="text" className="w-28 text-center  text-black w-full  ">
+          <span> {randomquote?.quote}</span>
         </div>
         <div id="author" className=" text-black">
           {randomquote?.author}
@@ -50,7 +50,7 @@ function App() {
         >
           New Quote
         </button>
-        <a id="tweet-quote"></a>
+        <a href="twitter.com/intent/tweet" id="tweet-quote"></a>
       </div>
     </>
   );
