@@ -29,7 +29,9 @@ function App() {
           Heelo
           {randomquote?.quote}
         </div>
-        <div id="author"></div>
+        <div id="author" className=" text-black">
+          {randomquote?.author}
+        </div>
         <button
           id="new-quote"
           onClick={async () => {
